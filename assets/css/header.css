@@ -1,0 +1,94 @@
+.header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+}
+.header::after {
+    background-image: url('/assets/icons/header.svg');
+    background-repeat: no-repeat;
+    content: '';
+    width: 2rem;
+    display: inline-block;
+    height: 2rem;
+    background-size: contain;
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+}
+
+.header .photo {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+}
+
+.header .title {
+    text-align: center;
+    font-family: Neue Machine;
+}
+
+.information {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
+}
+
+.information p {
+    margin: .5rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.information p::before {
+    content: '';
+    width: 1.2rem;
+    display: inline-block;
+    height: 1.2rem;
+    background-size: contain;
+    margin-right: .5rem;
+}
+
+.information .profile::before {
+    background-image: url('/assets/icons/profile.svg');
+    background-repeat: no-repeat;
+}
+
+.information .email::before {
+    background-image: url('/assets/icons/email.svg');
+    background-repeat: no-repeat;
+}
+
+.information .location::before {
+    background-image: url('/assets/icons/location.svg');
+    background-repeat: no-repeat;
+}
+
+.information .whatsapp::before {
+    background-image: url('/assets/icons/whatsapp.svg');
+    background-repeat: no-repeat;
+}
+
+@media only screen and (min-width: 768px) {
+    .header {
+        display: grid;
+        grid-template-areas: 
+        "photo title"
+        "photo information"
+        ;
+    }
+    .header .photo {
+        grid-area: photo;
+        margin: 0 auto;
+    }
+    .header .title {
+        grid-area: title;
+        text-align: start;
+        max-width: 210px;
+    }
+    .header .information {
+        grid-area: information;
+    }
+}
