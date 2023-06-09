@@ -40,14 +40,15 @@
     <main class="main">
       <header class="header">
         <img
-          src="/assets/img//luizito.png"
+          src="/assets/img/luizito.png"
           class="photo"
           alt="Foto de perfil"
+          id="profile.photo"
         />
 
         <h1 class="title">
           Olá,<br />
-          eu sou Luis Fernando F. dos Santos
+          eu sou <span id="profile.name">Carregando....</span>
         </h1>
 
         <div class="information">
@@ -56,20 +57,23 @@
               href="https://www.linkedin.com/in/luis-fernando-santos-759255149/"
               target="_blank"
             >
-              Developer Pleno NTConsult
+              <span id="profile.job">Carregando....</span>
             </a>
           </p>
-          <p class="location">Cachoeirinha - BR</p>
+          <p class="location">
+            <span id="profile.location">Carregando....</span>
+          </p>
           <p class="whatsapp">
             <a
               href="https://api.whatsapp.com/send/?phone=5551985401356&text=Ol%C3%A1%2C%20meu%20amigo!"
               target="_blank"
-              >+5551985401356</a
+              id="profile.phone"
+              >Carregando....</a
             >
           </p>
           <p class="email">
-            <a href="mailto:luisfernandosantos504@gmail.com"
-              >luisfernandosantos504@gmail.com</a
+            <a href="mailto:luisfernandosantos504@gmail.com" id="profile.email"
+              >Carregando....</a
             >
           </p>
         </div>
@@ -81,44 +85,14 @@
           <div class="skills">
             <section class="tools">
               <h3>Habilidades Profissionais:</h3>
-              <ul>
-                <li>
-                  <img
-                    src="/assets/icons/skills/react.svg"
-                    alt="react"
-                    title="react"
-                  />
-                </li>
-                <li>
-                  <img
-                    src="/assets/icons/skills/git.svg"
-                    alt="git"
-                    title="git"
-                  />
-                </li>
-                <li>
-                  <img
-                    src="/assets/icons/skills/js.svg"
-                    alt="js"
-                    title="js"
-                  />
-                </li>
-                <li>
-                  <img
-                    src="/assets/icons/skills/java.svg"
-                    alt="java"
-                    title="java"
-                  />
-                </li>
-              </ul>
+              <ul id="profile.skills.hardSkills"></ul>
             </section>
             <section class="personal">
               <h3>Habilidades Pessoais:</h3>
-              <ul>
-                <li>Paciência</li>
-                <li>Faz e depois testa</li>
-                <li>Comunicação ruim</li>
-                <li>Gosta de trabalhar sozinho</li>
+              <ul id="profile.skills.softSkills">
+                <li>Carregando....</li>
+                <li>Carregando....</li>
+                <li>Carregando....</li>
               </ul>
             </section>
           </div>
@@ -128,11 +102,7 @@
       <section class="acordeon">
         <button class="trigger" type="button">Idiomas</button>
         <div class="content">
-          <ul class="languages">
-            <li>Português</li>
-            <li>Inglês</li>
-            <li>Alemão</li>
-            <li>Mandarim</li>
+          <ul class="languages" id="profile.languages">
           </ul>
         </div>
       </section>
@@ -140,31 +110,7 @@
       <section class="acordeon">
         <button class="trigger" type="button">Projetos</button>
         <div class="content">
-          <ul class="portfolio">
-            <li>
-              <span class="title">Nome do Projeto </span>
-              <a href="https://www.google.com" target="_blank"
-                >https://www.google.com</a
-              >
-            </li>
-            <li>
-              <span class="title">Nome do Projeto </span>
-              <a href="https://www.google.com" target="_blank"
-                >https://www.google.com</a
-              >
-            </li>
-            <li>
-              <span class="title">Nome do Projeto </span>
-              <a href="https://www.google.com" target="_blank"
-                >https://www.google.com</a
-              >
-            </li>
-            <li>
-              <span class="title">Nome do Projeto </span>
-              <a href="https://www.google.com" target="_blank"
-                >https://www.google.com</a
-              >
-            </li>
+          <ul class="portfolio" id="profile.projects">
           </ul>
         </div>
       </section>
@@ -172,7 +118,7 @@
       <section class="acordeon">
         <button class="trigger" type="button">Experiência Profissional</button>
         <div class="content">
-          <ul class="experience">
+          <ul class="experience" id="profile.experience">
             <li>
               <span class="title">Backend Enginner / AWS</span>
               <span class="period">Jan 2020 - Current</span>
@@ -189,5 +135,7 @@
       </section>
     </main>
     <script src="/assets/js/acordeon.js"></script>
+    <script src="/assets/js/api.js"></script>
+    <script src="/assets/js/main.js"></script>
   </body>
 </html>
