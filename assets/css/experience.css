@@ -1,33 +1,16 @@
 .experience {
     display: flex;
     flex-direction: column;
-    justify-content: flex-start;
-    flex-wrap: wrap;
     margin: 0;
     padding: 0;
     list-style: none;
 }
 
-.experience  li{
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
+.experience li {
     margin-bottom: 1rem;
-    margin: 1rem 0;
-    padding: 1rem;
-    font-size: 1rem;
 }
 
-.experience  li .title{
-    display: flex;
-    flex-direction: row;
-    margin-bottom: .5rem;
-    font-size: 1.25rem;
-    font-weight: 700;
-    text-align: start;
-}
-
-.experience  li .period{
+.experience li .period {
     display: flex;
     flex-direction: row;
     align-items: center;
